@@ -6,4 +6,6 @@ sklearn
 xlrd
 scipy
 jupyter
+requests
+beautifulsoup4
 jupyterlab
