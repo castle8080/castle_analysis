@@ -35,3 +35,13 @@ I would also like to run distilbert to obtain embeddings for artist descriptions
 #### 2021/10/30
 
 The initial pass of clustering using KMeans over TFIDF of album detail pages was not very exciting. I ended up with mostly 1 big cluster and several small ones. It was more interesting to find the 10 closest albums to a reference album not by the same artist. I want to try out agglomerative clustering next, but I also think that the text in wikipedia about albums is generally less informative than text written about artists. Clustering on artists might be better.
+
+#### 2021/10/31
+
+I created embeddings for artists using doc2vec. The embeddings have seemed more interesting than TFIDF embeddings for albums. Finding similar artists to other artists seemed to work pretty well. I tested it with my cousin and daughter last night a bit. I also tried clustering using agglomerative clustering and began sampling from clusters of music groups I don't listen to as often but look interesting.
+
+I am really liking agglomerative clustering and I the KDTree class in sklearn is very nice. Previously I had been doing similarity calculations using pairwise comparisons and sorting myself. I really like KDTree it seems fast. I believe it is similar to an algorithm I wrote for 3D game programming to help calculate object collisions.
+
+I would like to look more into the clusters and see if I can come up with ways to describe them better. For the first pass, I took the most common genres albums were tagged with in artist clusters. I would like to get words from the detail text instead.
+
+TODO: Check out the doc2vec model and see what it exposes. Perhaps it exposes the vocabulary?
