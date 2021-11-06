@@ -15,5 +15,10 @@ if not exist venv\ (
 REM Activate the environment.
 call venv\scripts\activate
 
+REM Pip had to be upgraded for cryptography to install correctly on windows.
+python -m pip install --upgrade pip 
+
+https://cryptography.io/en/latest/installation/
+
 REM Install requirements
 pip install -r requirements.txt

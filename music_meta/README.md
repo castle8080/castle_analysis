@@ -2,6 +2,22 @@
 
 Experimenting with data about music artists and albums. I am looking to use wikipedia text about albums and artists to help reccomend albums I might want to listen to. I am interested in finding albums or artists I might not normally listen to but will still like. It seems like many algorithms used on popular sites give me albums/songs which are too similar. I would like find an algorithm that expands the range of music I listen to.
 
+## CONFIG
+
+Some of the notebooks need configuration to do operations such as downloading info from you tube. A file var/config.json should be created.
+
+Template for var/config.json
+
+```
+{
+    "youtube": {
+        "base-url": "https://www.googleapis.com/youtube/v3",
+        "api-key": "<YOUR YOUTUBE API KEY>"
+    }
+}
+```
+
+
 ## Wikipedia Extract
 
 The first stage of this work is going through data available on Wikipedia about albums.

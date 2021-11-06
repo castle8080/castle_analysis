@@ -6,7 +6,10 @@ sklearn
 xlrd
 scipy
 jupyter
+cryptography
 requests
+requests_oauth2client
 beautifulsoup4
 jupyterlab
 gensim
+youtube_transcript_api
