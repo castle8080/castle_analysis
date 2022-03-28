@@ -12,4 +12,9 @@ requests_oauth2client
 beautifulsoup4
 jupyterlab
 gensim
+scikit-learn
+modAL
+requests
 youtube_transcript_api
+spacy
+en_core_web_sm
